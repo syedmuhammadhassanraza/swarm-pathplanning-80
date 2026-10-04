@@ -3,6 +3,7 @@ import numpy as np
 from grid import generate_problem, SEED
 from planner import make_path, path_length, collided_cells, make_fitness
 from pso import PSO
+from visualize import plot_path, plot_convergence
 
 N_WAYPOINTS = 8
 N_PARTICLES = 150
@@ -27,6 +28,9 @@ def main():
     path = make_path(best, start, goal)
     hits = collided_cells(path, obstacles, size)
     print(f"Best fitness: {best_f:.3f} | path length: {path_length(path):.3f} | collisions: {len(hits)}")
+    plot_path(size, obstacles, start, goal, path, path_length(path), SEED)
+    plot_convergence(history)
+    print("Saved results/path.png and results/convergence.png")
     return size, obstacles, start, goal, path, history
 
 
