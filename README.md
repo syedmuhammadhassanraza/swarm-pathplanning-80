@@ -2,7 +2,7 @@
 
 Swarm Intelligence Lab, Assignment 1
 
-- **Name:** YOUR NAME HERE
+- **Name:** syed muhammad hassan raza
 - **Roll number:** 80
 - **Seed used:** `80` (`random.seed(80)`, set in `grid.py` as `SEED = ROLL_NUMBER`)
 
