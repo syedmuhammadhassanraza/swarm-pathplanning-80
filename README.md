@@ -41,7 +41,7 @@ Each iteration: update velocity and position, evaluate fitness (which includes t
 
 ## Hand-drawn flow diagram
 
-![Hand-drawn flow diagram](images/flow_diagram.jpg)
+![Hand-drawn flow diagram](images/flowchart.jpeg)
 
 ## How to run
 
